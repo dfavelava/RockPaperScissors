@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dytriyrqvis84"]
+
+[ext_resource type="Script" uid="uid://bsmfgkhwd76ab" path="res://scenes/menus/buttons/actionButton.gd" id="1_4fw76"]
+
+[node name="PaperButton" type="Button" unique_id=1806506653]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Paper"
+script = ExtResource("1_4fw76")
+actionName = "Paper"
+metadata/_custom_type_script = "uid://bsmfgkhwd76ab"

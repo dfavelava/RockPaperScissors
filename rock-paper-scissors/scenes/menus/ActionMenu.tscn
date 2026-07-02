@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://dd44v5sta1hex"]
 
+[ext_resource type="PackedScene" uid="uid://b2cv4udj04c0x" path="res://scenes/menus/buttons/RockButton.tscn" id="1_vfg2r"]
+[ext_resource type="PackedScene" uid="uid://dytriyrqvis84" path="res://scenes/menus/buttons/PaperButton.tscn" id="2_4rpun"]
+[ext_resource type="PackedScene" uid="uid://dfeuf1jn2wu5j" path="res://scenes/menus/buttons/ScissorsButton.tscn" id="3_8gnu8"]
+
 [node name="ActionMenu" type="SubViewportContainer" unique_id=1730331629]
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,14 +22,12 @@ offset_bottom = 40.0
 [node name="HBoxContainer" type="HBoxContainer" parent="SubViewport/CenterContainer" unique_id=2134878233]
 layout_mode = 2
 
-[node name="RockButton" type="Button" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=704680487]
+[node name="RockButton" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=1735977987 instance=ExtResource("1_vfg2r")]
 layout_mode = 2
 text = "Rock"
 
-[node name="PaperButton" type="Button" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=1383407815]
+[node name="PaperButton" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=1806506653 instance=ExtResource("2_4rpun")]
 layout_mode = 2
-text = "Paper"
 
-[node name="ScissorsButton" type="Button" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=1875510112]
+[node name="ScissorsButton" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=1647857478 instance=ExtResource("3_8gnu8")]
 layout_mode = 2
-text = "Scissors"

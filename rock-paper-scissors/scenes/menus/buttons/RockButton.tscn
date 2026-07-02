@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b2cv4udj04c0x"]
+
+[ext_resource type="Script" uid="uid://cybji6pyxlpmj" path="res://scenes/menus/buttons/rockButton.gd" id="1_qv7jm"]
+
+[node name="RockButton" type="Button" unique_id=389188977]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qv7jm")
+actionName = "Rock"
+metadata/_custom_type_script = "uid://bsmfgkhwd76ab"

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ActionStack" format=3 uid="uid://ctnw8n8fd6w2v"]
+
+[ext_resource type="Script" uid="uid://b4bw0wupp4pkc" path="res://resources/actionStack.gd" id="1_ny6v2"]
+
+[resource]
+script = ExtResource("1_ny6v2")
+metadata/_custom_type_script = "uid://b4bw0wupp4pkc"
