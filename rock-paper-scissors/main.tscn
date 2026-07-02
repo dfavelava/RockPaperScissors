@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d32kkvc34djp4"]
+
+[ext_resource type="PackedScene" uid="uid://dd44v5sta1hex" path="res://scenes/menus/ActionMenu.tscn" id="1_ig7tw"]
+
+[node name="Node2D" type="Node2D" unique_id=1805996466]
+
+[node name="ActionMenu" parent="." unique_id=1730331629 instance=ExtResource("1_ig7tw")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1

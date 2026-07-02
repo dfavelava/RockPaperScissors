@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dd44v5sta1hex"]
+
+[node name="ActionMenu" type="SubViewportContainer" unique_id=1730331629]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=381166192]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="CenterContainer" type="CenterContainer" parent="SubViewport" unique_id=2116620741]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SubViewport/CenterContainer" unique_id=2134878233]
+layout_mode = 2
+
+[node name="RockButton" type="Button" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=704680487]
+layout_mode = 2
+text = "Rock"
+
+[node name="PaperButton" type="Button" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=1383407815]
+layout_mode = 2
+text = "Paper"
+
+[node name="ScissorsButton" type="Button" parent="SubViewport/CenterContainer/HBoxContainer" unique_id=1875510112]
+layout_mode = 2
+text = "Scissors"
