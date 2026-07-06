@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dfd6nlfv0jgn0"]
+
+[ext_resource type="Script" uid="uid://ijrtx4b330wl" path="res://scenes/enemies/TestEnemy/test_enemy.gd" id="1_asmix"]
+
+[sub_resource type="Gradient" id="Gradient_asmix"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_asmix"]
+gradient = SubResource("Gradient_asmix")
+
+[node name="TestEnemy" type="Node2D" unique_id=1959860294]
+script = ExtResource("1_asmix")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=147522599]
+texture = SubResource("GradientTexture2D_asmix")
+
+[node name="Label" type="Label" parent="." unique_id=1859522717]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "5 / 5"
+horizontal_alignment = 1

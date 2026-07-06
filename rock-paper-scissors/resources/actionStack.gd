@@ -4,7 +4,7 @@ extends Resource
 var actions: Array[Constants.Actions] = []
 
 signal actions_updated
-signal perform_action
+signal perform_action(action: Constants.Actions)
 
 func addActions(newActions: Array[Constants.Actions]) -> void:
 	for action in newActions:

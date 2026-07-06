@@ -7,3 +7,9 @@ enum Actions {
 	PAPER,
 	SCISSORS
 }
+
+enum Types {
+	ROCK,
+	PAPER,
+	SCISSORS
+}
