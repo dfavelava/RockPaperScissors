@@ -1,13 +1,15 @@
 [gd_scene format=3 uid="uid://b2cv4udj04c0x"]
 
-[ext_resource type="Script" uid="uid://cybji6pyxlpmj" path="res://scenes/menus/buttons/rockButton.gd" id="1_qv7jm"]
+[ext_resource type="Script" uid="uid://bsmfgkhwd76ab" path="res://scenes/menus/buttons/actionButton.gd" id="1_qv7jm"]
+[ext_resource type="PackedScene" uid="uid://dpom8vy3hff4m" path="res://scenes/menus/labels/CountSprite.tscn" id="2_mbyhx"]
 
-[node name="RockButton" type="Button" unique_id=389188977]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="RockButton" type="CenterContainer" unique_id=1233380420]
+
+[node name="ActionButton" type="Button" parent="." unique_id=795179846]
+layout_mode = 2
+text = "Rock"
 script = ExtResource("1_qv7jm")
-actionName = "Rock"
+actionName = 1
 metadata/_custom_type_script = "uid://bsmfgkhwd76ab"
+
+[node name="CountSprite" parent="ActionButton" unique_id=250986634 instance=ExtResource("2_mbyhx")]

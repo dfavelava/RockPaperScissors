@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dpom8vy3hff4m"]
+
+[ext_resource type="Script" uid="uid://cikayaogl2v1m" path="res://scenes/menus/labels/countSprite.gd" id="1_dkd81"]
+
+[sub_resource type="Gradient" id="Gradient_qv7jm"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.67469877, 0.6807229)
+colors = PackedColorArray(1, 0, 0, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_qvk34"]
+gradient = SubResource("Gradient_qv7jm")
+width = 24
+height = 24
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0, 0)
+
+[node name="CountSprite" type="Node2D" unique_id=250986634]
+script = ExtResource("1_dkd81")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1868914585]
+texture = SubResource("GradientTexture2D_qvk34")
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=698656943]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -23.5
+offset_right = 8.0
+offset_bottom = -0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "0"
+horizontal_alignment = 1

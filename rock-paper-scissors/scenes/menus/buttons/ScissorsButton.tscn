@@ -1,14 +1,17 @@
 [gd_scene format=3 uid="uid://dfeuf1jn2wu5j"]
 
 [ext_resource type="Script" uid="uid://bsmfgkhwd76ab" path="res://scenes/menus/buttons/actionButton.gd" id="1_o3s2j"]
+[ext_resource type="PackedScene" uid="uid://dpom8vy3hff4m" path="res://scenes/menus/labels/CountSprite.tscn" id="2_tar3p"]
 
-[node name="ScissorsButton" type="Button" unique_id=1647857478]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="ScissorsButton" type="CenterContainer" unique_id=769336431]
+offset_right = 70.0
+offset_bottom = 31.0
+
+[node name="ActionButton" type="Button" parent="." unique_id=548956765]
+layout_mode = 2
 text = "Scissors"
 script = ExtResource("1_o3s2j")
-actionName = "Scissors"
+actionName = 3
 metadata/_custom_type_script = "uid://bsmfgkhwd76ab"
+
+[node name="CountSprite" parent="ActionButton" unique_id=250986634 instance=ExtResource("2_tar3p")]
