@@ -29,5 +29,5 @@ func _on_perform_delay_timer_timeout() -> void:
 	if !action_stack.isEmpty():
 		action_stack.performAction()
 
-func concatString(accum: String, actionName: Constants.Actions) -> String:
-	return accum + Constants.Actions.find_key(actionName) + "\n"
+func concatString(accum: String, action: Action) -> String:
+	return accum + Constants.Actions.find_key(action.actionName) + "\n"

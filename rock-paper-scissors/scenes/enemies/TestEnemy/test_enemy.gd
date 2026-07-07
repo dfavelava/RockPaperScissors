@@ -2,10 +2,10 @@ extends Enemy
 
 @onready var healthLabel = $Label
 
-func onPerformAction(actionName: Constants.Actions) -> void:
+func onPerformAction(action: Action) -> void:
+	var actionName = action.actionName
 	match actionName:
 		Constants.Actions.ROCK:
-			print("here")
 			takeDamage(1)
 
 func onHealthUpdated() -> void:

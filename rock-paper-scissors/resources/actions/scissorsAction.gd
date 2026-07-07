@@ -1,0 +1,2 @@
+class_name ScissorsAction
+extends Action

@@ -1,22 +1,22 @@
 class_name ActionStack
 extends Resource
 
-var actions: Array[Constants.Actions] = []
+var actions: Array[Action] = []
 
 signal actions_updated
-signal perform_action(action: Constants.Actions)
+signal perform_action(action: Action)
 
-func addActions(newActions: Array[Constants.Actions]) -> void:
+func addActions(newActions: Array[Action]) -> void:
 	for action in newActions:
 		actions.push_back(action)
 	actions_updated.emit()
 
-func addAction(action: Constants.Actions) -> void:
+func addAction(action: Action) -> void:
 	actions.push_back(action)
 	actions_updated.emit()
 
 func performAction() -> void:
-	var performed_action: Constants.Actions = actions.pop_back()
+	var performed_action: Action = actions.pop_back()
 	perform_action.emit(performed_action)
 	actions_updated.emit()
 

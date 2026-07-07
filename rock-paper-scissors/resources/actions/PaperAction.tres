@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PaperAction" format=3 uid="uid://bwnusqp8it8ou"]
+
+[ext_resource type="Script" uid="uid://d1ey25j3r28kn" path="res://resources/actions/paperAction.gd" id="1_8no2n"]
+
+[resource]
+script = ExtResource("1_8no2n")
+actionName = 2
+metadata/_custom_type_script = "uid://d1ey25j3r28kn"

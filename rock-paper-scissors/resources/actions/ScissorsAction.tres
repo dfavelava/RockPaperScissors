@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ScissorsAction" format=3 uid="uid://dv3xx3mfp4e3m"]
+
+[ext_resource type="Script" uid="uid://cosr4v6vu6cxt" path="res://resources/actions/scissorsAction.gd" id="1_cdnsv"]
+
+[resource]
+script = ExtResource("1_cdnsv")
+actionName = 3
+metadata/_custom_type_script = "uid://cosr4v6vu6cxt"

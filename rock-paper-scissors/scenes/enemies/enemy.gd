@@ -14,10 +14,7 @@ func _ready() -> void:
 	actionStack.perform_action.connect(_on_perform_action)
 	health_updated.connect(_on_health_updated)
 
-func _on_perform_action(actionName: Constants.Actions) -> void:
-	onPerformAction(actionName)
-
-func onPerformAction(_actionName: Constants.Actions) -> void:
+func onPerformAction(_action: Action) -> void:
 	pass
 
 func onHealthUpdated() -> void:
@@ -30,6 +27,9 @@ func takeDamage(amount: int) -> void:
 func heal(amount: int) -> void:
 	health += amount
 	health_updated.emit()
+
+func _on_perform_action(action: Action) -> void:
+	onPerformAction(action)
 
 func _on_health_updated() -> void:
 	onHealthUpdated()

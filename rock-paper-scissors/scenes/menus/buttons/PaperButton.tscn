@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dytriyrqvis84"]
 
 [ext_resource type="Script" uid="uid://bsmfgkhwd76ab" path="res://scenes/menus/buttons/actionButton.gd" id="1_4fw76"]
+[ext_resource type="Resource" uid="uid://bwnusqp8it8ou" path="res://resources/actions/PaperAction.tres" id="2_q04gj"]
 [ext_resource type="PackedScene" uid="uid://dpom8vy3hff4m" path="res://scenes/menus/labels/CountSprite.tscn" id="2_y34cd"]
 
 [node name="PaperButton" type="CenterContainer" unique_id=707628735]
@@ -11,7 +12,7 @@ offset_bottom = 31.0
 layout_mode = 2
 text = "Paper"
 script = ExtResource("1_4fw76")
-actionName = 2
+action = ExtResource("2_q04gj")
 metadata/_custom_type_script = "uid://bsmfgkhwd76ab"
 
 [node name="CountSprite" parent="ActionButton" unique_id=250986634 instance=ExtResource("2_y34cd")]

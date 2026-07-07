@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="RockAction" format=3 uid="uid://ch7uhsv2ay1ht"]
+
+[ext_resource type="Script" uid="uid://buol3fwpiopd4" path="res://resources/actions/rockAction.gd" id="1_3v2rn"]
+
+[resource]
+script = ExtResource("1_3v2rn")
+actionName = 1
+metadata/_custom_type_script = "uid://buol3fwpiopd4"
