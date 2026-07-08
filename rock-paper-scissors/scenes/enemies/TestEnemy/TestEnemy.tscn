@@ -9,6 +9,9 @@ gradient = SubResource("Gradient_asmix")
 
 [node name="TestEnemy" type="Node2D" unique_id=1959860294]
 script = ExtResource("1_asmix")
+health = null
+max_health = null
+type = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=147522599]
 texture = SubResource("GradientTexture2D_asmix")

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://nbbsncqpw581"]
+
+[ext_resource type="PackedScene" uid="uid://dd44v5sta1hex" path="res://scenes/menus/ActionMenu.tscn" id="1_b4e6y"]
+[ext_resource type="PackedScene" uid="uid://dfd6nlfv0jgn0" path="res://scenes/enemies/TestEnemy/TestEnemy.tscn" id="1_ns6rn"]
+
+[node name="CombatRoom" type="Node2D" unique_id=610437533]
+
+[node name="Cards" type="Node2D" parent="." unique_id=360752860]
+
+[node name="Enemies" type="Node2D" parent="." unique_id=1240315633]
+
+[node name="TestEnemy" parent="Enemies" unique_id=1959860294 instance=ExtResource("1_ns6rn")]
+position = Vector2(578, 320)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=261075020]
+z_index = -1
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+
+[node name="ActionMenu" parent="MarginContainer" unique_id=1296549786 instance=ExtResource("1_b4e6y")]
+layout_mode = 2

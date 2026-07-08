@@ -8,6 +8,8 @@ var actionStack = preload("res://resources/ActionStack.tres")
 
 @export var type := Constants.Types.ROCK
 
+var id := 0
+
 signal health_updated
 
 func _ready() -> void:
@@ -29,7 +31,8 @@ func heal(amount: int) -> void:
 	health_updated.emit()
 
 func _on_perform_action(action: Action) -> void:
-	onPerformAction(action)
+	if !action.targetId || action.targetId == id:
+		onPerformAction(action)
 
 func _on_health_updated() -> void:
 	onHealthUpdated()
