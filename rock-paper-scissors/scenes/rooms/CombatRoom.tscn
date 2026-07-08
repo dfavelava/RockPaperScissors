@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://nbbsncqpw581"]
 
 [ext_resource type="PackedScene" uid="uid://dd44v5sta1hex" path="res://scenes/menus/ActionMenu.tscn" id="1_b4e6y"]
+[ext_resource type="Script" uid="uid://dvwbexvu8kvg1" path="res://scenes/rooms/combat_room.gd" id="1_n7xvs"]
 [ext_resource type="PackedScene" uid="uid://dfd6nlfv0jgn0" path="res://scenes/enemies/TestEnemy/TestEnemy.tscn" id="1_ns6rn"]
 
 [node name="CombatRoom" type="Node2D" unique_id=610437533]
+script = ExtResource("1_n7xvs")
 
 [node name="Cards" type="Node2D" parent="." unique_id=360752860]
 
