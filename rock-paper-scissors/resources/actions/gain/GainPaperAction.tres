@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="GainAction" format=3 uid="uid://ba20gin5f401c"]
+
+[ext_resource type="Script" uid="uid://br8dhbhgmm87y" path="res://resources/actions/gain/gainAction.gd" id="1_dvifk"]
+
+[resource]
+script = ExtResource("1_dvifk")
+type = 1
+metadata/_custom_type_script = "uid://br8dhbhgmm87y"

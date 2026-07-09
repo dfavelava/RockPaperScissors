@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="GainAction" format=3 uid="uid://xhlw3am7ny8b"]
+
+[ext_resource type="Script" uid="uid://br8dhbhgmm87y" path="res://resources/actions/gain/gainAction.gd" id="1_inmsw"]
+
+[resource]
+script = ExtResource("1_inmsw")
+metadata/_custom_type_script = "uid://br8dhbhgmm87y"

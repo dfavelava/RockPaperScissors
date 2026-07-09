@@ -7,7 +7,7 @@
 [node name="CombatRoom" type="Node2D" unique_id=610437533]
 script = ExtResource("1_n7xvs")
 
-[node name="Cards" type="Node2D" parent="." unique_id=360752860]
+[node name="Deck" type="Node2D" parent="." unique_id=360752860]
 
 [node name="Enemies" type="Node2D" parent="." unique_id=1240315633]
 
