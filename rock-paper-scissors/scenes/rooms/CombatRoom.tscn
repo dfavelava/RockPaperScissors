@@ -3,11 +3,15 @@
 [ext_resource type="PackedScene" uid="uid://dd44v5sta1hex" path="res://scenes/menus/ActionMenu.tscn" id="1_b4e6y"]
 [ext_resource type="Script" uid="uid://dvwbexvu8kvg1" path="res://scenes/rooms/combat_room.gd" id="1_n7xvs"]
 [ext_resource type="PackedScene" uid="uid://dfd6nlfv0jgn0" path="res://scenes/enemies/TestEnemy/TestEnemy.tscn" id="1_ns6rn"]
+[ext_resource type="PackedScene" uid="uid://cr4enp5nyuvlb" path="res://scenes/deck/cards/GainPaper/GainPaperCard.tscn" id="2_v7jix"]
 
 [node name="CombatRoom" type="Node2D" unique_id=610437533]
 script = ExtResource("1_n7xvs")
 
 [node name="Deck" type="Node2D" parent="." unique_id=360752860]
+position = Vector2(578, 480)
+
+[node name="GainPaperCard" parent="Deck" unique_id=230929272 instance=ExtResource("2_v7jix")]
 
 [node name="Enemies" type="Node2D" parent="." unique_id=1240315633]
 

@@ -1,6 +1,8 @@
+class_name GainPaperCard
 extends Card
 
-var gainPaperAction = preload("res://resources/deck/card/gain_paper.gd")
+var gainPaperAction: Action = preload("res://resources/actions/gain/GainPaperAction.tres")
 
 func get_actions() -> Array[Action]:
+	print("Gain Paper")
 	return [gainPaperAction]

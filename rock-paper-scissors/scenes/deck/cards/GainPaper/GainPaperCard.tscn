@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cr4enp5nyuvlb"]
+
+[ext_resource type="Script" uid="uid://12kw0lt0gfnr" path="res://scenes/deck/cards/GainPaper/gain_paper_card.gd" id="1_xag7s"]
+[ext_resource type="Resource" uid="uid://v14vbdaapt4a" path="res://resources/deck/card/GainPaperCard.tres" id="2_7tgj7"]
+[ext_resource type="Texture2D" uid="uid://dgc1n2n0nyprs" path="res://assets/testCardBackground.tres" id="2_12do0"]
+[ext_resource type="Texture2D" uid="uid://dpxoanh5pm7ld" path="res://assets/gainPaperCardArt.tres" id="3_5gm16"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xag7s"]
+size = Vector2(64, 90)
+
+[node name="GainPaperCard" type="Area2D" unique_id=230929272]
+script = ExtResource("1_xag7s")
+card = ExtResource("2_7tgj7")
+backgroundTexture = ExtResource("2_12do0")
+artTexture = ExtResource("3_5gm16")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1928486369]
+texture = ExtResource("2_12do0")
+
+[node name="Art" type="Sprite2D" parent="." unique_id=20272171]
+position = Vector2(0, -13)
+texture = ExtResource("3_5gm16")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=233085353]
+visible = false
+shape = SubResource("RectangleShape2D_xag7s")
+
+[node name="Label" type="Label" parent="." unique_id=1239631179]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Test"
+horizontal_alignment = 1
