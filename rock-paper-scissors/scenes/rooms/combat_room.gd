@@ -1,3 +1,4 @@
+class_name CombatRoom
 extends Node2D
 
 enum TurnPhase {

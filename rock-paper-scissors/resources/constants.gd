@@ -22,3 +22,10 @@ enum CardNames {
 	GAIN_PAPER,
 	GAIN_SCISSORS
 }
+
+enum CardLocations {
+	DRAW_PILE,
+	HAND,
+	DISCARD_PILE,
+	EXILED
+}

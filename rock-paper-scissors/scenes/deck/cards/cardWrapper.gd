@@ -10,6 +10,7 @@ var hovered := false
 var cardId := -1
 
 signal played_card(cardId: int)
+signal card_moved(cardId: int, oldLoc: Constants.CardLocations, newLoc: Constants.CardLocations)
 
 @export var card: Card
 @export var backgroundTexture := defaultBackground
@@ -19,15 +20,18 @@ signal played_card(cardId: int)
 @onready var artSprite = $Art
 @onready var label = $Label
 
+var location: Constants.CardLocations = Constants.CardLocations.DRAW_PILE
+
 func _ready() -> void:
 	backgroundSprite.texture = backgroundTexture
 	artSprite.texture = artTexture
 	label.text = get_name()
+	self.visible = false
 	
 	mouse_entered.connect(onMouseEnter)
 	mouse_exited.connect(onMouseExit)
 	
-	cardId = idManager.getId()
+	cardId = idManager.getId(self)
 
 func _input(event: InputEvent) -> void:
 	if hovered and event is InputEventMouseButton:
@@ -44,3 +48,8 @@ func onMouseEnter() -> void:
 
 func onMouseExit() -> void:
 	hovered = false
+
+func moveCard(newLoc: Constants.CardLocations) -> void:
+	card_moved.emit(cardId, location, newLoc)
+	location = newLoc
+	self.visible = newLoc == Constants.CardLocations.HAND
