@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c4b70be0on0dm"]
+
+[ext_resource type="Script" uid="uid://ys5on8wxf1i2" path="res://scenes/deck/cards/GainPaper/gain_rock_card.gd" id="1_8x21b"]
+[ext_resource type="Resource" uid="uid://by82kxidkbyhe" path="res://resources/deck/card/GainRockCard.tres" id="2_cjgu6"]
+[ext_resource type="Texture2D" uid="uid://dgc1n2n0nyprs" path="res://assets/testCardBackground.tres" id="3_2vwug"]
+[ext_resource type="Texture2D" uid="uid://yyp1r2rop7qt" path="res://assets/cards/art/rock.svg" id="4_irkrg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xag7s"]
+size = Vector2(64, 90)
+
+[node name="GainRockCard" type="Area2D" unique_id=230929272]
+script = ExtResource("1_8x21b")
+card = ExtResource("2_cjgu6")
+backgroundTexture = ExtResource("3_2vwug")
+artTexture = ExtResource("4_irkrg")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1928486369]
+texture = ExtResource("3_2vwug")
+
+[node name="Art" type="Sprite2D" parent="." unique_id=20272171]
+position = Vector2(0, -13)
+texture = ExtResource("4_irkrg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=233085353]
+visible = false
+shape = SubResource("RectangleShape2D_xag7s")
+
+[node name="Label" type="Label" parent="." unique_id=1239631179]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Test"
+horizontal_alignment = 1

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://12kw0lt0gfnr" path="res://scenes/deck/cards/GainPaper/gain_paper_card.gd" id="1_xag7s"]
 [ext_resource type="Resource" uid="uid://v14vbdaapt4a" path="res://resources/deck/card/GainPaperCard.tres" id="2_7tgj7"]
 [ext_resource type="Texture2D" uid="uid://dgc1n2n0nyprs" path="res://assets/testCardBackground.tres" id="2_12do0"]
-[ext_resource type="Texture2D" uid="uid://dpxoanh5pm7ld" path="res://assets/gainPaperCardArt.tres" id="3_5gm16"]
+[ext_resource type="Texture2D" uid="uid://d0udq6tfbxmge" path="res://assets/cards/art/paper.svg" id="4_3ra5u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xag7s"]
 size = Vector2(64, 90)
@@ -12,14 +12,14 @@ size = Vector2(64, 90)
 script = ExtResource("1_xag7s")
 card = ExtResource("2_7tgj7")
 backgroundTexture = ExtResource("2_12do0")
-artTexture = ExtResource("3_5gm16")
+artTexture = ExtResource("4_3ra5u")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1928486369]
 texture = ExtResource("2_12do0")
 
 [node name="Art" type="Sprite2D" parent="." unique_id=20272171]
 position = Vector2(0, -13)
-texture = ExtResource("3_5gm16")
+texture = ExtResource("4_3ra5u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=233085353]
 visible = false

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="GainScissorsCard" format=3 uid="uid://c1t37ctvm64s3"]
+
+[ext_resource type="Script" uid="uid://dm01n5qfhtt74" path="res://resources/deck/card/gain_scissors.gd" id="1_n7n74"]
+
+[resource]
+script = ExtResource("1_n7n74")
+metadata/_custom_type_script = "uid://dm01n5qfhtt74"

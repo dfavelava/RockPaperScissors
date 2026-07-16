@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="GainRockCard" format=3 uid="uid://by82kxidkbyhe"]
+
+[ext_resource type="Script" uid="uid://m6m0h6ihrv2s" path="res://resources/deck/card/gain_rock.gd" id="1_jwg1a"]
+
+[resource]
+script = ExtResource("1_jwg1a")
+metadata/_custom_type_script = "uid://m6m0h6ihrv2s"

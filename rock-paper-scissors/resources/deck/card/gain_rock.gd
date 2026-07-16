@@ -1,3 +1,4 @@
+class_name GainRockCard
 extends Card
 
 var gainRockAction = preload("res://resources/actions/gain/GainRockAction.tres")

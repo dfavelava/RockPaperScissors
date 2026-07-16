@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c1mpsolpr0k6"]
+
+[ext_resource type="Script" uid="uid://cscp1dce6iw3v" path="res://scenes/deck/cards/GainPaper/gain_scissors_card.gd" id="1_653kx"]
+[ext_resource type="Resource" uid="uid://c1t37ctvm64s3" path="res://resources/deck/card/GainScissorsCard.tres" id="2_totdn"]
+[ext_resource type="Texture2D" uid="uid://dc4g8ra1n3bhw" path="res://assets/cards/art/scissors.svg" id="3_653kx"]
+[ext_resource type="Texture2D" uid="uid://dgc1n2n0nyprs" path="res://assets/testCardBackground.tres" id="3_pfmp0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xag7s"]
+size = Vector2(64, 90)
+
+[node name="GainScissorsCard" type="Area2D" unique_id=230929272]
+script = ExtResource("1_653kx")
+card = ExtResource("2_totdn")
+backgroundTexture = ExtResource("3_pfmp0")
+artTexture = ExtResource("3_653kx")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1928486369]
+texture = ExtResource("3_pfmp0")
+
+[node name="Art" type="Sprite2D" parent="." unique_id=20272171]
+position = Vector2(0, -13)
+texture = ExtResource("3_653kx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=233085353]
+visible = false
+shape = SubResource("RectangleShape2D_xag7s")
+
+[node name="Label" type="Label" parent="." unique_id=1239631179]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Test"
+horizontal_alignment = 1

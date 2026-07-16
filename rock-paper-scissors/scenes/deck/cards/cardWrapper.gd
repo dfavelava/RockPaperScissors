@@ -4,8 +4,12 @@ extends Area2D
 
 var defaultBackground: Texture2D = preload("res://assets/testCardBackground.tres")
 var actionStack: ActionStack = preload("res://resources/ActionStack.tres")
+var idManager: IdManager = preload("res://resources/idManager.tres")
 
 var hovered := false
+var cardId := -1
+
+signal played_card(cardId: int)
 
 @export var card: Card
 @export var backgroundTexture := defaultBackground
@@ -22,15 +26,18 @@ func _ready() -> void:
 	
 	mouse_entered.connect(onMouseEnter)
 	mouse_exited.connect(onMouseExit)
+	
+	cardId = idManager.getId()
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseButton:
+	if hovered and event is InputEventMouseButton:
 		# Left Mouse Button Click
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			onPlay()
 
 func onPlay() -> void:
-	actionStack.addActions(card.get_actions())
+	card.play_card()
+	played_card.emit(cardId)
 
 func onMouseEnter() -> void:
 	hovered = true

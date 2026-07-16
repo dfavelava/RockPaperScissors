@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="IdManager" format=3 uid="uid://1siddr6cjotg"]
+
+[ext_resource type="Script" uid="uid://b4gwuo4mtsqwy" path="res://resources/idManager.gd" id="1_wdun6"]
+
+[resource]
+script = ExtResource("1_wdun6")
+metadata/_custom_type_script = "uid://b4gwuo4mtsqwy"
